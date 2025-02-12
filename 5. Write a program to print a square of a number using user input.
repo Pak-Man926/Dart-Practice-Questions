@@ -1,0 +1,18 @@
+//Write a program to print a square of a number using user input.
+
+import 'dart:io';
+import 'dart:math';
+
+void main()
+{
+  var num1;
+  
+  print("Enter the number you'd like to Square:");
+  
+  num1 = int.parse(stdin.readLineSync()!);
+  
+  var num = pow(num1, 2);
+  
+  print("Square: $num");
+  
+}
