@@ -1,0 +1,26 @@
+//Formula= (p * t * r) / 100
+
+import 'dart:io';
+
+void main()
+{
+  var principle;
+  var time;
+  var rate;
+  
+  print("Enter the Principle amount:");
+  
+  principle = double.parse(stdin.readLineSync()!);
+  
+  print("Enter the Time frame(Years):");
+  
+  time = double.parse(stdin.readLineSync()!);
+  
+  print("Enter the Rate of interest");
+  
+  rate = double.parse(stdin.readLineSync()!);
+  
+  var simpleInterest = principle * time * rate;
+  
+  print("Your Simple Interest is: $simpleInterest");
+}
