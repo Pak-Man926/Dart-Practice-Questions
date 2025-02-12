@@ -1,0 +1,22 @@
+//Write a program to print full name of a from first name and last name using user input.
+
+import 'dart:io';
+
+void main()
+{
+  var firstName;
+  var secondName;
+  
+  print("Enter your First Name:");
+  
+  firstName = stdin.readLineSync();
+  
+  print("Enter your Second Name:");
+  
+  secondName = stdin.readLineSync();
+  
+  var fullName = firstName + " " + secondName;
+  
+  print("Your Full Name is: $fullName");
+  
+}
