@@ -1,0 +1,10 @@
+//Write a program in Dart to remove all whitespaces from String.
+
+void main()
+{
+  String name = "  Jackson  ";
+  
+  print("With Spaces: $name \n Without spaces: ${name.trim()}");
+  
+  
+}
