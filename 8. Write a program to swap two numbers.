@@ -1,0 +1,15 @@
+//Write a program to swap two numbers.
+
+void main()
+{
+  var num1 = '1';
+  var num2 = '2';
+  
+  print("Numbers before swapping:\n First Number:$num1 \n Second Number: $num2");
+  
+  var num3 = num1;
+  num1 = num2;
+  num2 = num3;
+  
+  print("Numbers after swapping: \n First Number: $num1 \n Second Number: $num2");
+}
