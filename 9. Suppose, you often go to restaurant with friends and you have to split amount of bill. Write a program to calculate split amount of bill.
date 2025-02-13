@@ -1,0 +1,24 @@
+//Suppose, you often go to restaurant with friends and you have to split amount of bill. Write a program to calculate split amount of bill. 
+
+//Formula= (total bill amount) / number of people
+
+import 'dart:io';
+
+void main()
+{
+  var bill;
+  
+  var totalNumberofFriends;
+  
+  print("Enter the bill amount:");
+  
+  bill = int.parse(readLineSync()!);
+  
+  print("Enter the number of people contributing:");
+  
+  totalNumberofFriends= int.parse(readLineSync()!);
+  
+  var totalAmountpayable = bill / totalNumberofFriends;
+  
+  print("Amount payable by everyone is: $totalAmountpayable");
+}
