@@ -1,0 +1,11 @@
+//Write a dart program to calculate the sum of natural numbers.
+
+void main()
+{
+  var num1 = 0;
+  
+  for (var i = 0; i<=10; i++)
+  {
+    print(num1 += i);
+  }
+}
