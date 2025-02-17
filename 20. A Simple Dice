@@ -1,0 +1,12 @@
+import 'dart:math';
+
+void main()
+{
+  Random random = new Random();
+  
+  int randomNumber1 = random.nextInt(6) + 1;
+  int randomNumber2 = random.nextInt(6) + 1;
+
+  print("The Dice number is: $randomNumber1");
+  print("The Dice number is: $randomNumber2");
+}
