@@ -1,28 +1,19 @@
 //Write a program in Dart to print even numbers between intervals using function.
 
-void main()
-{
-  intervals1();
-  intervals2();
+
+void main() {
+  evenNumbers(1, 10);
+  evenNumbers(11, 20);
+  evenNumbers(21, 30);
 }
 
-void intervals1()
+void evenNumbers(int num1, int num2)
 {
-  for(var i=0; i<=10; i++)
+  for(var i = num1; i<= num2; i++)
   {
-    if(i % 2 ==0)
+    if (i % 2 == 0)
     {
       print(i);
-    }
-  }
-}
-void intervals2()
-{
-  for(var j=10; j<=20; j++)
-  {
-    if(j % 2 ==0)
-    {
-      print(j);
     }
   }
 }
