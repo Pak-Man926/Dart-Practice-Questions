@@ -1,9 +1,13 @@
 //Write a dart program to generate multiplication tables of 5.
 
-void main() {
-  var num1 = 5;
-
-  for (var i = 1; i <= 10; i++) {
-    print(num1 * i);
+void main()
+{
+  var num1= 5;
+  
+  for(var i = 0; i<=10; i++)
+  {
+    var multiples =num1 * i;
+    
+    print("Multiplication Table of $num1 by $i  == $multiples");
   }
 }
