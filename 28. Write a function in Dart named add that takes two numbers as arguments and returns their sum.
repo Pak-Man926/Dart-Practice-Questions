@@ -1,0 +1,13 @@
+//Write a function in Dart named add that takes two numbers as arguments and returns their sum.
+
+void main()
+{
+  add(20,30);
+}
+
+void add(var num1, var num2)
+{
+  var sum = num1 + num2;
+  
+  print("$num1 + $num2 = $sum");
+}
