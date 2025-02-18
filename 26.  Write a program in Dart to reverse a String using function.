@@ -1,0 +1,13 @@
+//Write a program in Dart to reverse a String using function.
+
+void main()
+{
+  reverse("Pak Man");
+}
+
+void reverse(var name)
+{
+  var newName = name.toLowerCase().split('').reversed.join().toLowerCase().toString();
+  
+  print("Original name is: $name \n Reversed name is: $newName");
+}
