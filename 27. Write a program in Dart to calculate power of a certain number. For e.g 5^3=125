@@ -1,0 +1,13 @@
+//Write a program in Dart to calculate power of a certain number. For e.g 5^3=125
+
+import 'dart:math';
+
+void main()
+{
+  var num1 = 5;
+  
+  var power = pow(num1,3);
+  
+  print("Number: $num1 \n Power: $power");
+  
+}
