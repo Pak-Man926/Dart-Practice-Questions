@@ -1,0 +1,11 @@
+//Write a function in Dart called createUser with parameters name, age, and isActive, where isActive has a default value of true.
+
+void main()
+{
+  createUser("David",19);
+}
+
+void createUser(var name, var age,{bool isActive = true})
+{
+  print("Hello $name, your age is $age and your membership is active: $isActive");
+}
