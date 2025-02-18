@@ -1,0 +1,16 @@
+//Write a program in Dart that find the area of a circle using function. Formula: pi * r * r
+
+void main()
+{
+  const pi = 3.14;
+  var r = 7;
+  
+  circle(pi, r);
+}
+
+void circle(var pi, var r)
+{
+  var area = pi * r * r;
+  
+  print("The area of a circle is: $area");
+}
