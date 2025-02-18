@@ -1,0 +1,15 @@
+//Write a function in Dart called maxNumber that takes three numbers as arguments and returns the largest number.
+
+import 'dart:math';
+
+void main()
+{
+  maxNumber(10,20,30);
+}
+
+void maxNumber(int num1, int num2, int num3)
+{
+  var maxNumber = max(max(num1,num2),num3).toInt();
+  
+  print("Between $num1,$num2,$num3, $maxNumber is the largest number.");
+}
