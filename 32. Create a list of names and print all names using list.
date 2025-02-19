@@ -1,0 +1,8 @@
+//Create a list of names and print all names using list.
+
+void main()
+{
+  var names =["David","John","James","Abdi"];
+  
+  print(names);
+}
