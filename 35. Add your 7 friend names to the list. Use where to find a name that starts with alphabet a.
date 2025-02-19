@@ -1,0 +1,20 @@
+//Add your 7 friend names to the list. Use where to find a name that starts with alphabet a.
+
+void main()
+{
+  List<String> names = ["David"];
+  
+  names.add("Abdi");
+  names.add("Angel");
+  names.add("Abbigael");
+  names.add("Faustin");
+  names.add("Lex");
+  names.add("Grey");
+  names.add("Sam");
+  
+  print(names);
+  
+  List<String> startsA = names.where((element) => element.startsWith("A")).toList();
+  
+  print(startsA);
+}
