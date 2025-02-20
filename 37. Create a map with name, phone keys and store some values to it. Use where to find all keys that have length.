@@ -1,0 +1,17 @@
+//Create a map with name, phone keys and store some values to it. Use where to find all keys that have length.
+
+void main()
+{
+  Map<String,String> contacts ={
+    "Vicy": "4578",
+    "Dave": "1738",
+    "Ryan": "28975",
+    "Name": "0010",
+    "Phone": "267892",
+    "Jux": "2019",
+  };
+  
+  contacts.keys.where((key) =>  key.length == 4);
+  
+  print(contacts);
+}
