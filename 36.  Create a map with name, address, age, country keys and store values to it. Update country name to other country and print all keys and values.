@@ -1,0 +1,19 @@
+//Create a map with name, address, age, country keys and store values to it. Update country name to other country and print all keys and values.
+
+void main()
+{
+  Map <String, String> details ={
+    "Name": "David",
+    "Address": "Kabete",
+    "Age":"19",
+    "Country": "Kenya"
+  };
+  
+  details.forEach((key,value) => print("These are your details: $key, $value"));
+  
+  details["Country"]= "USA";
+  
+  print("\n");
+  
+  details.forEach((key,value) => print("These are your details after the change: $key, $value"));
+}
