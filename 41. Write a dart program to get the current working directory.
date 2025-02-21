@@ -1,0 +1,10 @@
+//Write a dart program to get the current working directory.
+
+import 'dart:io';
+
+void main()
+{
+  File file = new File("hello.txt");
+  
+  print("The file is located in: ${file.absolute.path}");
+}
