@@ -1,0 +1,17 @@
+//Write a dart program to add your name to “hello.txt” file.
+
+import 'dart:io';
+
+void main()
+{
+  File file = new File('hello.txt');
+  
+  print("Enter your name:");
+  
+  String? contents = stdin.readLineSync();
+  
+  file.writeAsStringSync("$contents");
+  
+  print(contents);
+  
+}
