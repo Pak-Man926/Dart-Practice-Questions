@@ -1,0 +1,15 @@
+//Create a class Book with three properties: name, author, and price. Also, create a method called display, which prints out the values of the three properties.
+
+class Book
+{
+  String? name;
+  String? author;
+  double? price;
+  
+  void display()
+  {
+    print("The name of the book is: $name");
+    print("The author of the book is: $author");
+    print("The price of the book is: $price");
+  }
+}
