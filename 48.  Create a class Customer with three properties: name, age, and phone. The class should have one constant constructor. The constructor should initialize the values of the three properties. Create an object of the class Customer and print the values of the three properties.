@@ -1,0 +1,25 @@
+//Create a class Customer with three properties: name, age, and phone. The class should have one constant constructor. The constructor should initialize the values of the three properties. Create an object of the class Customer and print the values of the three properties.
+
+class Customer
+{
+  final String? name;
+  final int? age;
+  final int? phone;
+  
+  const Customer({this.name, this.age, this.phone});
+  
+  void details()
+  {
+    print("The name of the customer is: $name");
+    print("The age of the customer is: $age");
+    print("The phone number of the customer is: $phone");
+  }
+  
+}
+
+void main()
+{
+  const Customer customer = Customer(name:"David",age:22,phone:0715441689);
+  
+  customer.details();
+}
