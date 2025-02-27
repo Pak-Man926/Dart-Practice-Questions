@@ -1,0 +1,25 @@
+//Create a class Camera with properties: name, color, megapixel. Create a method called display which prints out the values of the three properties. Create two objects of the class Camera and call the method display.
+
+class Camera
+{
+  String? name;
+  String? color;
+  double? megapixel;
+  
+  void display()
+  {
+    print("Your Camera is: $name");
+    print("It's color is: $color");
+    print("Its megapixels is: $megapixel");
+  }
+}
+
+void main()
+{
+  Camera camera= new Camera();
+  
+  camera.name="Nikon";
+  camera.color ="Black";
+  camera.megapixel=20.0;
+  camera.display();
+}
