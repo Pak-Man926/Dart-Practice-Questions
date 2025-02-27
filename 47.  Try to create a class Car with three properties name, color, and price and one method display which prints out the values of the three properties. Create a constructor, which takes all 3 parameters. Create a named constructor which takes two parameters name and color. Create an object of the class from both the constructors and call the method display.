@@ -1,0 +1,40 @@
+//Try to create a class Car with three properties name, color, and price and one method display which prints out the values of the three properties. Create a constructor, which takes all 3 parameters. Create a named constructor which takes two parameters name and color. Create an object of the class from both the constructors and call the method display.
+
+class Car
+{
+  String? name;
+  String? color;
+  double? price;
+  
+  Car(String name, String color, double price)
+  {
+    this.name = name;
+    this.color = color;
+    this.price = price;
+  }
+  
+  Car.namedConstructor(String name, String color)
+  {
+    this.name= name;
+    this.color = color;
+  }
+  
+  void details()
+  {
+    print("The Car name is: $name");
+    print("The Car color is: $color");
+    print("The Car price is: $price");
+  }
+}
+
+void main()
+{
+  var car = Car("Volkswagen","Mate Black",18000);
+  
+  car.details();
+  
+  var car2 =Car.namedConstructor("Subaru","Blue");
+  
+  car2.details();
+  
+}
