@@ -1,0 +1,25 @@
+//Create class Home with properties name, address, numberOfRooms. Create a method called display which prints out the values of the properties. Create an object of the class Home and set the values of the properties. Call the method display to print out the values of the properties.
+
+class Home
+{
+  String? name;
+  String? address;
+  int? roomTotal;
+  
+  void display()
+  {
+    print("Your home is: $name");
+    print("Your home address is: $address");
+    print("It has a total of ${roomTotal} rooms");
+  }
+}
+
+void main()
+{
+  Home home = new Home();
+  
+  home.name = "Kabete Gardens";
+  home.address ="Kabete";
+  home.roomTotal =4;
+  home.display();
+}
