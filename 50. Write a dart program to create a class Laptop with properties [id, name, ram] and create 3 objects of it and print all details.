@@ -1,0 +1,37 @@
+//Write a dart program to create a class Laptop with properties [id, name, ram] and create 3 objects of it and print all details.
+
+class Laptop
+{
+  int? id;
+  String? name;
+  int? ram;
+  
+  Laptop(int id, String name, int ram)
+  {
+    this.id = id;
+    this.name = name;
+    this.ram = ram;
+  }
+    
+  void details()
+  {
+    print("Laptop details include:\n Id: $id \n Name: $name \n Ram: $ram gb");
+    
+  }
+}
+
+void main()
+{
+  Laptop laptop = new Laptop(1,"Macbook",16);
+  
+  laptop.details();
+  
+  Laptop laptop2 = new Laptop(2,"HP",8);
+  
+  laptop2.details();
+  
+  Laptop laptop3 = new Laptop(3,"Lenovo",4);
+  
+  laptop3.details();
+  
+}
