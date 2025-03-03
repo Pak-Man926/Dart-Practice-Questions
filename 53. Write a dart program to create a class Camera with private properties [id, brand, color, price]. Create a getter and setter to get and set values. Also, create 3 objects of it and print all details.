@@ -1,0 +1,78 @@
+//Write a dart program to create a class Camera with private properties [id, brand, color, price]. Create a getter and setter to get and set values. Also, create 3 objects of it and print all details.
+
+class Camera
+{
+  int? _id;
+  String? _brand;
+  String? _color;
+  double? _price;
+  
+  int getId()
+  {
+    return _id!;
+  }
+  
+  void setId(int id)
+  {
+    this._id = id;
+  }
+  
+  String getBrand()
+  {
+    return _brand!;
+  }
+  
+  void setBrand(String brand)
+  {
+    this._brand = brand;
+  }
+  
+  String getColor()
+  {
+    return _color!;
+  }
+  
+  void setColor(String color)
+  {
+    this._color = color;
+  }
+  
+  double getPrice()
+  {
+    return _price!;
+  }
+  
+  void setPrice(double price)
+  {
+    this._price = price;
+  }
+   
+}
+
+void main()
+{
+  Camera camera = new Camera();
+  Camera camera2 = new Camera();
+  Camera camera3 = new Camera();
+  
+  camera.setId(1);
+  camera.setBrand("Nikon");
+  camera.setColor("Black");
+  camera.setPrice(25000.00);
+  
+  camera2.setId(2);
+  camera2.setBrand("Canon");
+  camera2.setColor("Black");
+  camera2.setPrice(35000.00);
+  
+  camera3.setId(3);
+  camera3.setBrand("Sony");
+  camera3.setColor("Black");
+  camera3.setPrice(20000.00);
+  
+  
+  print("Camera details include: \n Camera Id: ${camera.getId()} \n Camera Brand: ${camera.getBrand()}\n Camera Color: ${camera.getColor()} \n Camera Price: ${camera.getPrice()}\n");
+  print("Camera details include: \n Camera Id: ${camera2.getId()} \n Camera Brand: ${camera2.getBrand()}\n Camera Color: ${camera2.getColor()} \n Camera Price: ${camera2.getPrice()}\n");
+  print("Camera details include: \n Camera Id: ${camera3.getId()} \n Camera Brand: ${camera3.getBrand()}\n Camera Color: ${camera3.getColor()} \n Camera Price: ${camera3.getPrice()}\n");
+  
+}
