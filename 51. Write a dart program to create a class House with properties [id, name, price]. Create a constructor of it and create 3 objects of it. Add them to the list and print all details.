@@ -1,0 +1,32 @@
+//Write a dart program to create a class House with properties [id, name, price]. Create a constructor of it and create 3 objects of it. Add them to the list and print all details.
+
+class House
+{
+  int? id;
+  String? name;
+  double? price;
+  
+  House(int id, String name, double price)
+  {
+    this.id = id;
+    this.name = name;
+    this.price = price;
+  }
+  
+  void details()
+  {
+    print("The house details are:\n House no: $id \n House name: $name \n House price: $price \n");
+  }
+}
+
+void main()
+{
+  House house = new House(1,"East", 250000.00);
+  house.details();
+  
+  House house2 = new House(2,"West", 270000.00);
+  house2.details();
+  
+  House house3 = new House(3,"North", 350000.00);
+  house3.details();
+}
